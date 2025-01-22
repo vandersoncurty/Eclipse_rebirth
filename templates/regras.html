@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <!-- Sessão 1: Discord (semelhante à página de início) -->
+    <section class="banner">
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='img/regras/Img_Central_Regras_Eclipse.png') }}" alt="Imagem Inicial">
+            <a href="https://discord.gg/eclipseconanrp" target="_blank">
+                <div class="button-overlay">
+                    <div class="button-text">DISCORD</div>
+                    <img src="{{ url_for('static', filename='img/botao_losango.png') }}" alt="Botão para Discord">
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <div class="rulesText">
+        <h1>Regras Gerais</h1>
+        <ol>
+            <li>Não será tolerado nenhum tipo de comportamento de discriminação racial, sexual, gênero, etc. A punição é banimento sem prévio aviso após a denúncia ser analisada e confirmada.</li>
+            <li>Call adm somente em situações importantes. Opte sempre pelo ticket. Não atenderemos ninguém que chame "Ó deuses estou orando!". Sempre opte por sair de perto de players.</li>
+            <li>Em caso de qualquer dúvida ou sugestão, use as salas do Discord.</li>
+            <li>Não é permitido MetaGaming (utilizar informações obtidas fora do ambiente do RolePlay).</li>
+            <li>Não é permitido Anti-RP (quebrar a imersão de outro jogador. Também pode incluir reconhecer pessoas mascaradas ou usar justificativas inverossímeis).</li>
+            <li>Nenhum tipo de Dark RP será permitido no servidor, incluindo estupro, pedofilia, suicídio e temas afins.</li>
+            <li>Jogadores inativos por 7 dias terão seus personagens excluídos, salvo notificação prévia.</li>
+            <li>Não haverá reposição de itens ou pets perdidos devido a bugs, exceto itens VIPs.</li>
+        </ol>
+        
+        <h1>Regras de Ambientação</h1>
+        <ol start="9">
+            <li>O jogador deve permanecer interpretando seu personagem, mantendo a imersão.</li>
+            <li>Comportamentos de flaming são proibidos. Conflitos devem ser resolvidos dentro do RP.</li>
+            <li>Siga sempre a ambientação do personagem para o desenvolvimento da narrativa.</li>
+            <li>A Administração não se responsabiliza por itens ou experiência perdidos em mudanças de classe ou profissão.</li>
+            <li>A ausência de regra listada não justifica ações duvidosas. Todas serão analisadas.</li>
+        </ol>
+        
+        <h1>Regras de RP</h1>
+        <ol start="14">
+            <li>Cuide do seu personagem. Três mortes em 30 minutos configuram permadeath.</li>
+            <li>Troca de raça exige reset de personagem. Manter atributos custa R$ 40,00.</li>
+            <li>Primeira troca de classe é gratuita. Subsequentes custam R$ 20,00.</li>
+        </ol>
+        
+        <h1>Regras de PvP</h1>
+        <ol start="17">
+            <li>PvP deve ter contexto. Não force situações ou deslogue durante combate.</li>
+            <li>Assassinatos sem justificativa são punidos. Eventos de PvP requerem aviso prévio à staff.</li>
+            <li>Mortes durante PvP invalidam lembrança de eventos anteriores ao combate.</li>
+            <li>É proibido destruir casas e roubar durante reinicializações.</li>
+            <li>Combate com montarias é proibido. Deslogar para evitar PvP será punido.</li>
+        </ol>
+        
+        <h1>Regras de Construção e Clãs</h1>
+        <ol start="22">
+            <li>Todos os jogadores devem criar um clã, mesmo jogando sozinhos.</li>
+            <li>O limite máximo de membros por clã é 10.</li>
+            <li>Limites de pets e montarias são restritos, com exceções para VIPs.</li>
+            <li>Respeite os limites de blocos e decorações. Construções extras requerem compra.</li>
+            <li>Não obstrua passagens ou pontos de respawn com construções.</li>
+            <li>Não deixe itens abandonados no mapa. Clãs infratores serão notificados.</li>
+            <li>Construções fora do padrão têm 24 horas para correção. Demolição ocorrerá após esse prazo.</li>
+            <li>É proibido o uso de mais de 30 alicerces em construções.</li>
+        </ol>
+    </div>
+    <div><br><br><br><br><br><br></div>
+
+{% endblock %}

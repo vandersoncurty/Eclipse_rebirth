@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <!-- Sessão 1: Discord (semelhante à página de início) -->
+    <section class="banner">
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='img/regras/inicio_thelassia') }}" alt="Imagem Inicial">
+            <a href="https://discord.gg/eclipseconanrp" target="_blank">
+                <div class="button-overlay">
+                    <div class="button-text">DISCORD</div>
+                    <img src="{{ url_for('static', filename='img/botao_losango.png') }}" alt="Botão para Discord">
+                </div>
+            </a>
+        </div>
+    </section>
+
+{% endblock %}
