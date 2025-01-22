@@ -1,18 +1,29 @@
-body {
+/* Resetando margens e padding do body e html */
+html, body {
     margin: 0;
-    font-family: 'Work Sans', sans-serif;
+    padding: 0;
+    height: 100%; /* Garante que a altura da página ocupe toda a tela */
+    width: 100%; /* Garante que a largura da página ocupe toda a tela */
+    overflow-x: hidden; /* Impede rolagem horizontal */
+    background-image: url('../img/body_bg.png');
 }
 
 header {
-    background-image: url('../img/header_bg.jpg');
+    background-image: url('../img/header_bg.png');
     background-size: cover;
     padding: 20px;
     color: white;
+    position: fixed;  /* Fixa o header no topo da tela */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    z-index: 1000; /* Garante que o header fique acima de outros elementos */
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
+    padding: 20;
     display: flex;
     gap: 15px;
 }
@@ -21,8 +32,190 @@ nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    font-size: 0.8em;
+    margin-left: 5px;
+}
+
+nav a:hover .arrow {
+    transform: rotate(180deg);
+    transition: transform 0.3s;
 }
 
 nav a:hover {
     text-decoration: underline;
 }
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 0.9em;
+}
+
+
+
+.banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+.button-overlay {
+    position: absolute;
+    bottom: 50px; /* Ajuste conforme necessário */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-overlay img {
+    width: 300px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    position: relative;
+}
+
+.button-text {
+    font-family: Arial, sans-serif;
+    font-size: 2.2em;
+    color: rgb(210, 210, 210);
+    margin-bottom: -35px; /* Ajuste para posicionar sobre o botão */
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+}
+
+
+.welcome-text {
+    padding: 20px;
+    text-align: justify;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.welcome-text h1 {
+    font-family: 'IM FELL DW Pica', serif;
+    text-align: center;
+}
+
+
+
+.text-image {
+    position: relative;
+    margin-top: 0px;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden; /* Previne o texto de sair da imagem */
+}
+
+.text-image .image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.text-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text-image .text-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+    width: 65%;  /* Ajusta a largura do texto para se adaptar melhor à imagem */
+    color: white;
+    max-height: 80%;  /* Limita a altura do texto */
+}
+
+.text-content h1 {
+    font-family: 'IM Fell DW Pica', serif;
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2em;
+    line-height: 1.5;
+}
+
+
+
+
+
+/* Sessões 2 a 13 - Contêiner de cada sessão */
+.section-container {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.background-image {
+    width: 100%;
+    height: 500px; /* Defina a altura das sessões conforme necessário */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-image-container {
+    width: 45%; /* A imagem à esquerda ocupa 45% da largura */
+    height: 100%;
+    padding-left: 20px; /* Distância da borda esquerda do navegador */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-image-container img {
+    width: 90%; /* Ajuste a largura da imagem dentro do contêiner */
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px; /* Bordas arredondadas na imagem */
+}
+
+.right-side {
+    width: 50%; /* O texto ocupa 50% da largura */
+    height: 100%;
+    padding: 20px;
+}
+
+.section-title {
+    font-family: 'IM Fell DW Pica', serif;
+    font-size: 2em;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.section-text {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.1em;
+    color: white;
+    line-height: 1.6;
+    text-align: justify;
+    height: 100%;
+    overflow: hidden;
+}
+

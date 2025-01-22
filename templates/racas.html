@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <!-- Sessão 1: Discord (semelhante à página de início) -->
+    <section class="banner">
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='img/imagem_racas.png') }}" alt="Imagem Inicial">
+            <a href="https://discord.gg/eclipseconanrp" target="_blank">
+                <div class="button-overlay">
+                    <div class="button-text">DISCORD</div>
+                    <img src="{{ url_for('static', filename='img/botao_losango.png') }}" alt="Botão para Discord">
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <div class="section-container">
+        <!-- Imagem de fundo da sessão -->
+        <div class="background-image" style="background-image: url('static/img/racas/abissal-bg.png');">
+            <!-- Imagem à esquerda da sessão -->
+            <div class="left-image-container">
+                <img src="static/img/racas/abissal.png" alt="Imagem raça">
+            </div>
+            <!-- Texto da sessão -->
+            <div class="right-side">
+                <h2 class="section-title">ABISSAL</h2>
+                <p class="section-text">
+                    Da mesma forma que as serpes, serpentes e lagartos, os peixes, tubarões e baleias dos mares e oceanos foram afetados pela Catástrofe de mais de dois mil anos atrás. E não somente eles como os demais seres marinhos também, como caranguejos, moluscos, aguas-vivas e etc. Esses seres se viram não somente alterados fisicamente como mentalmente: saíram do mar para a terra, a fim não somente de poupá-la como também de interagir com ela. Não existe mais assentamentos aquáticos de abissais, sendo todos componentes do Império a que mora. No entanto, alguns sentem a urgência de se banhar nos rios que cortavam o território da antiga Umbra.
+                    <br><br><br><br><br><br>
+                    Altura: Min 170, Max 220
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
