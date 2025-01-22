@@ -11,18 +11,21 @@
     <header>
         <nav>
             <ul>
-                <li><a href="{{ url_for('inicio') }}">INICIO</a></li>
-                <li><a href="{{ url_for('racas') }}">RAÇAS</a></li>
-                <li><a href="{{ url_for('classes') }}">CLASSES</a></li>
-                <li><a href="{{ url_for('profissoes') }}">PROFISSÕES</a></li>
-                <li><a href="{{ url_for('regras') }}">REGRAS</a></li>
-                <li><a href="{{ url_for('thelassia') }}">THELASSIA</a></li>
-                <li><a href="{{ url_for('historia') }}">HISTÓRIA</a></li>
+                <li><a href="{{ url_for('inicio') }}">INICIO <span class="arrow">˅</span></a></li>
+                <li><a href="{{ url_for('racas') }}">RAÇAS <span class="arrow">˅</span></a></li>
+                <li><a href="{{ url_for('classes') }}">CLASSES <span class="arrow">˅</span></a></li>
+                <li><a href="{{ url_for('profissoes') }}">PROFISSÕES <span class="arrow">˅</span></a></li>
+                <li><a href="{{ url_for('regras') }}">REGRAS <span class="arrow">˅</span></a></li>
+                <li><a href="{{ url_for('thelassia') }}">THELASSIA <span class="arrow">˅</span></a></li>
+                <li><a href="{{ url_for('historia') }}">HISTÓRIA <span class="arrow">˅</span></a></li>
             </ul>
         </nav>
     </header>
     <main>
         {% block content %}{% endblock %}
     </main>
+    <footer>
+        <p>TODOS OS DIREITOS RESERVADOS © 2025-ECLIPSE ROLEPLAY.</p>
+    </footer>
 </body>
 </html>
