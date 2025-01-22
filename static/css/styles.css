@@ -271,13 +271,12 @@ footer {
     padding: 20px;
     text-align: justify;
     font-family: 'Work Sans', sans-serif;
-    color: white;
+    color: rgb(255, 255, 255);
     position: relative;
-    margin: 0 auto; /* Centraliza horizontalmente */
-    top: 50px; /* Ajuste conforme necessário para iniciar abaixo de outros conteúdos */
-    max-width: 60%; /* Ajuste conforme necessário */
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro translúcido */
-    border-radius: 10px;
+    margin: 0 auto; 
+    top: 50px;  
+    background-color: rgba(0, 0, 0, 0.8); 
+    border-radius: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     max-width: 70%;
 }
@@ -290,6 +289,19 @@ footer {
     margin: 0 auto; /* Centraliza horizontalmente */
     border-radius: 10px;
     text-align: center;
+    max-width: 70%;
+    line-height: 1.8;
+    font-size: 1.5em;
+}
+
+#thelassia-normal-text {
+    padding: 20px;
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    position: relative;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    border-radius: 10px;
+    text-align: justify;
     max-width: 70%;
     line-height: 1.8;
     font-size: 1.5em;
@@ -322,7 +334,7 @@ footer {
 }
 
 #thelassia-img {
-    width: 90%; /* Ajuste a largura da imagem dentro do contêiner */
+    width: 70%; /* Ajuste a largura da imagem dentro do contêiner */
     height: auto;
     object-fit: cover;
     border-radius: 20px; /* Bordas arredondadas na imagem */
