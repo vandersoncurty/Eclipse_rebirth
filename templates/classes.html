@@ -1,0 +1,123 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <!-- Sessão 1: Discord (semelhante à página de início) -->
+    <section class="banner">
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='img/classes/inicio_classes.png') }}" alt="Imagem Inicial">
+            <a href="https://discord.gg/eclipseconanrp" target="_blank">
+                <div class="button-overlay">
+                    <div class="button-text">DISCORD</div>
+                    <img src="{{ url_for('static', filename='img/botao_losango.png') }}" alt="Botão para Discord">
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <div class="section-container">
+        <!-- Imagem de fundo da sessão -->
+        <div class="background-image" style="background-image: url('static/img/racas/abissal-bg.png');">
+            <!-- Imagem à esquerda da sessão -->
+            <div class="left-image-container">
+                <img src="static/img/racas/abissal.png" alt="Imagem raça">
+            </div>
+            <!-- Texto da sessão -->
+            <div class="right-side">
+                <h2 class="section-title">CLASSES</h2>
+                <p class="section-text">
+                    Em Eclipse RP, a experiência de combate foi projetada para oferecer liberdade criativa e personalização completa aos jogadores. 
+                    <br>
+                    Diferente de sistemas tradicionais baseados em classes fixas e habilidades pré-definidas, aqui, cada jogador terá o poder de moldar seu estilo de jogo único por meio de escolhas estratégicas e adaptáveis.
+                    <br><br><br><br>
+                    <img src="static/img/silver_line.png" alt="linha prateada" style="width: 100%;">
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-container">
+        <!-- Imagem de fundo da sessão -->
+        <div class="background-image" style="background-image: url('static/img/racas/abissal-bg.png');">
+            <!-- Imagem à esquerda da sessão -->
+            <div class="left-image-container">
+                <img src="static/img/racas/abissal.png" alt="Imagem raça">
+            </div>
+            <!-- Texto da sessão -->
+            <div class="right-side">
+                <h2 class="section-title">SISTEMA DE COMBATE FÍSICO</h2>
+                <p class="section-text">
+                O sistema de combate físico será baseado em escolhas personalizadas feitas pelo jogador. Nele será possível escolher seus próprios movimentos e habilidades, sem depender de opções prontas ou classes fixas definidas pelos desenvolvedores. 
+                <br>
+                • No início, você escolherá um conjunto de habilidades e talentos de Nível 1.
+                <br>
+                • Em seguida, terá outra oportunidade de escolher, mas dessa vez entre conjuntos de Nível 2. Por fim, será possível selecionar um conjunto de Nível 3. Isso permitirá que você desenvolva seu personagem de forma única, de acordo com seu estilo de jogo.
+                <br>
+                • Cada habilidade ou talento será acompanhado de uma descrição detalhada no momento da escolha. Essas informações ajudarão o jogador a entender melhor como cada opção funciona e seus benefícios.  • O objetivo é permitir que o jogador planeje seu conjunto final de habilidades e talentos de forma estratégica, criando um estilo de combate único e pessoal. Além disso, as descrições destacarão dicas e exemplos práticos, tornando mais fácil visualizar como sua decisão impactará o desenvolvimento do personagem e o desempenho durante as batalhas.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-container">
+        <!-- Imagem de fundo da sessão -->
+        <div class="background-image" style="background-image: url('static/img/racas/abissal-bg.png');">
+            <!-- Imagem à esquerda da sessão -->
+            <div class="left-image-container">
+                <img src="static/img/racas/abissal.png" alt="Imagem raça">
+            </div>
+            <!-- Texto da sessão -->
+            <div class="right-side">
+                <h2 class="section-title">SISTEMA DE COMBATE MÁGICO</h2>
+                <p class="section-text">
+                Todos terão acesso a magia de sangue. Mais a magia de seu reino (Arcano ou Luz) e seguindo roleplay, poderão também aprender uma magia elemental, sendo assim o mago fechando até três magias ( 3 ). O sistema de combate mágico será baseado nas regras estabelecidas pelos Reinos para os praticantes de magia.
+                <br>
+                • Ele contará com diferentes níveis de magia, que permitirão a progressão da proficiência em cada tipo de feitiço escolhido. 
+                <br>
+                • As magias serão classificadas em três tipos principais: magias de selo, que deverão ser treinadas para progressão de dano, magias com dano real, que se adaptam às condições e resistências do alvo, e magias com dano fixo, que mantêm um impacto maior em controle de grupo ao invés de dano constante, independentemente do contexto.
+                <br>
+                • Além disso, haverá restrições específicas para o uso de determinados feitiços ou combinações mágicas, todas detalhadamente explicadas antes da criação do personagem. Essas diretrizes garantirão que o sistema seja equilibrado e ofereça liberdade criativa ao jogador, ao mesmo tempo em que respeita as regras do universo mágico do jogo.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-container">
+        <!-- Imagem de fundo da sessão -->
+        <div class="background-image" style="background-image: url('static/img/racas/abissal-bg.png');">
+            <!-- Imagem à esquerda da sessão -->
+            <div class="left-image-container">
+                <img src="static/img/racas/abissal.png" alt="Imagem raça">
+            </div>
+            <!-- Texto da sessão -->
+            <div class="right-side">
+                <h2 class="section-title">SISTEMA DE TRANSFORMAÇÕES</h2>
+                <p class="section-text">
+                Para os fãs de transformações, o Eclipse oferecerá opções com grande impacto, que seguirão a mesma progressão do sistema geral. Essas transformações variarão desde formas sutis, como animais para infiltrações discretas, até formas colossais projetadas para combates épicos. 
+                <br>
+                • Essa flexibilidade permitirá ao jogador adaptar suas escolhas ao estilo de jogo desejado, seja para estratégias furtivas ou para enfrentar batalhas intensas de forma imponente.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-container">
+        <!-- Imagem de fundo da sessão -->
+        <div class="background-image" style="background-image: url('static/img/racas/abissal-bg.png');">
+            <!-- Imagem à esquerda da sessão -->
+            <div class="left-image-container">
+                <img src="static/img/racas/abissal.png" alt="Imagem raça">
+            </div>
+            <!-- Texto da sessão -->
+            <div class="right-side">
+                <h2 class="section-title">Aviso Importante (Leia todos os sistemas com atenção!)</h2>
+                <p class="section-text">
+                    <br>
+                     • Independentemente da escolha do jogador em qualquer sistema, não será possível trocar para outro sistema posteriormente sem o devido processamento. Todos ganharão uma troca gratuita de classe, após a primeira escolha.
+                    <br>
+                    O servidor não permitirá resetar a classe do personagem a todo momento. Por isso, é fundamental revisar atentamente os sistemas estabelecidas antes de tomar sua decisão.  • O jogador escolherá qual sistema trilhar e seguirá. Essa limitação reforça a importância de planejar cuidadosamente o desenvolvimento do personagem, garantindo escolhas alinhadas ao estilo de jogo desejado.
+                </p>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
