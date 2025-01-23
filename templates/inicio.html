@@ -2,8 +2,11 @@
 {% block title %}Início - Eclipse Roleplay{% endblock %}
 {% block content %}
 <section class="banner">
-    <div class="image-container">
-        <img src="{{ url_for('static', filename='img/imagem_inicio.png') }}" alt="Imagem Inicial">
+    <div class="video-container">
+        <video autoplay muted loop style="width: 100%; height: auto;">
+            <source src="{{ url_for('static', filename='img/trailer.mp4') }}" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+          </video>
         <a href="https://discord.gg/eclipseconanrp" target="_blank">
             <div class="button-overlay">
                 <div class="button-text">DISCORD</div>

@@ -26,6 +26,10 @@ def regras():
 def thelassia():
     return render_template("thelassia.html")
 
+@app.route("/nilfheim")
+def nilfheim():
+    return render_template("nilfheim.html")
+
 @app.route("/historia")
 def historia():
     return render_template("historia.html")
