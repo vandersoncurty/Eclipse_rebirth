@@ -203,7 +203,7 @@ footer {
 }
 
 .left-image-container2 {
-    width: 45%; /* A imagem à esquerda ocupa 45% da largura */
+    width: 50%; /* A imagem à esquerda ocupa 45% da largura */
     height: 100%;
     padding-left: 20px; /* Distância da borda esquerda do navegador */
     display: flex;
