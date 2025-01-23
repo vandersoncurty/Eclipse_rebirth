@@ -1,13 +1,12 @@
-version: "3.9"
 services:
   web:
     build:
       context: .
       args:
+        GITHUB_TOKEN: ${GITHUB_TOKEN}
         REPO_URL: github.com/vandersoncurty/Eclipse_rebirth.git
     ports:
       - "5000:5000"
     environment:
       - FLASK_APP=app.py
       - FLASK_ENV=development
-      - GITHUB_TOKEN=${GITHUB_TOKEN} # Token obtido a partir de uma variável de ambiente
