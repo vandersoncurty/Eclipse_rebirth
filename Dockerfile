@@ -1,6 +1,23 @@
 FROM python:3.9-slim
+
+# Instalar dependências necessárias para o git
+RUN apt-get update && apt-get install -y git && apt-get clean
+
+# Definir o diretório de trabalho
 WORKDIR /app
-COPY requirements.txt .
+
+# Usar variáveis de ambiente para o repositório e token
+ARG REPO_URL
+ENV GITHUB_TOKEN=${GITHUB_TOKEN}
+
+# Clonar o repositório privado
+RUN git clone https://${GITHUB_TOKEN}@${REPO_URL} /app
+
+# Instalar dependências do Python
 RUN pip install -r requirements.txt
-COPY . .
+
+# Expor a porta padrão do Flask
+EXPOSE 5000
+
+# Comando para iniciar o aplicativo
 CMD ["flask", "run", "--host=0.0.0.0"]
