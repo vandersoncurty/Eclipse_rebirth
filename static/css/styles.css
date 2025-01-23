@@ -91,13 +91,15 @@ footer {
 }
 
 .button-text {
-    font-family: "Pirata One", serif;
-    font-size: 2.5em;
-    color: rgb(210, 210, 210);
-    margin-bottom: -35px; /* Ajuste para posicionar sobre o botão */
+    font-family: "Prociono", serif;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    margin-bottom: -35px;
     text-align: center;
     position: absolute;
     z-index: 1;
+    font-weight: bolder;
+    vertical-align: bottom;
 }
 
 
@@ -480,3 +482,20 @@ footer {
     display: block;
     margin: 0 auto;
 }
+
+
+
+
+.youtube-conteiner {
+    position: relative;
+    width: 80%; /* Ajuste a largura conforme necessário */
+    max-width: 800px; /* Limite máximo da largura */
+    margin: 0 auto; /* Centraliza o contêiner */
+}
+
+.youtube-conteiner iframe {
+    width: 100%; /* O vídeo vai preencher a largura do contêiner */
+    height: auto; /* A altura será ajustada automaticamente para manter a proporção */
+    aspect-ratio: 16 / 9; /* Mantém a proporção de 16:9 (padrão do YouTube) */
+}
+
