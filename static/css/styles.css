@@ -6,7 +6,7 @@ html, body {
     width: 100%; /* Garante que a largura da página ocupe toda a tela */
     overflow-x: hidden; /* Impede rolagem horizontal */
     background-image: url('../img/body_bg.png');
-    padding-top: 50px;
+    padding-top: 10px;
 }
 
 header {
