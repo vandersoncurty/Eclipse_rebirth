@@ -237,9 +237,11 @@ footer {
 }
 
 .right-side {
-    width: 50%; /* O texto ocupa 50% da largura */
-    height: 100%;
-    padding: 20px;
+    width: 60%; /* O texto ocupa 50% da largura */
+
+    padding: 50px;
+    align-items: center; /* Centraliza verticalmente */
+    height: 100%; /* Ajuste conforme o tamanho do contêiner */
 }
 
 .section-title {
